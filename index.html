@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buat Coco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Audio -->
+  <audio id="bgMusic">
+    <source src="" type="audio/mpeg">
+    
+  </audio>
+
+  <!-- Header -->
+  <header>
+    <div class="music-control">
+      <button onclick="playMusic()">Putar Musik 🎵</button>
+    </div>
+    <h1>Halo coco</h1>
+    <p>nfdjnfjjvnjnvjvnovvjnvjfviofvonjfnv</p>
+  </header>
+
+  <!-- Galeri -->
+  <section class="gallery">
+    <h2>Inget ga?</h2>
+    <div class="photo-grid">
+      <img src="foto/rwz.jpg" alt="Foto 1">
+      <img src="" alt="Foto 2">
+      <img src="" alt="Foto 3">
+    </div>
+  </section>
+
+  <!-- Pesan -->
+  <section class="message">
+    <h2>Pesan untuk ala 💌</h2>
+    <p>Kalo ada yang lebih indah dari Matahari pagi mungkin itu  ala (mungkin hehe)</p>
+  </section>
+
+  <!-- Tombol Love -->
+  <section class="love-button">
+    <button onclick="showLove()">Klik kalau kamu kangen aku :p</button>
+    <p id="loveText" style="display: none;">tau acil,  cuma gengsi aja kan, wle</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Dibuat untuk Rinanti Zahra (coco)</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+  const hour = new Date().getHours();
+  if (hour < 12) {
+    document.body.style.background = "#ffe4e1"; // pagi (lembut cerah)
+  } else if (hour < 18) {
+    document.body.style.background = "#ffd1dc"; // siang (pink ceria)
+  } else {
+    document.body.style.background = "#ffb6c1"; // malam (pink calm)
+  }
+</script>
+</body>
+</html>
